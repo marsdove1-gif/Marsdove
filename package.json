@@ -1,0 +1,42 @@
+{
+  "name": "marsdove-framework",
+  "version": "5.2.0",
+  "description": "Marsdove browser-native, configuration-first framework for reusable products.",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./components": "./src/components/index.js",
+    "./styles": "./styles/marsdove.css",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "marsdove": "./cli/marsdove.js"
+  },
+  "files": [
+    "src",
+    "styles",
+    "cli",
+    "README.md",
+    "V5_RULES.md",
+    "V5_ARCHITECTURE.json",
+    "V5_MVP.md"
+  ],
+  "scripts": {
+    "check": "node ./tests/check.mjs",
+    "docs": "node ./cli/serve.js . 4173"
+  },
+  "keywords": [
+    "marsdove",
+    "framework",
+    "browser",
+    "ui",
+    "components",
+    "ecommerce"
+  ],
+  "author": "Marsdove",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

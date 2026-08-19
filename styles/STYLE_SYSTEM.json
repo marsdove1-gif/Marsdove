@@ -1,0 +1,11 @@
+{
+  "entry": "/styles/marsdove.css",
+  "layers": {
+    "core": "Framework reset, theme and base rules",
+    "ui": "Primitive UI component styles",
+    "components": "Reusable composite/component styles",
+    "utilities": "Utility classes",
+    "pages": "Optional page-specific styles"
+  },
+  "compatibility": "Legacy /styles/*.css paths remain available as import shims."
+}

@@ -1,0 +1,29 @@
+.profile-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--surface-alt);
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: var(--space-md);
+}
+
+.profile-name {
+  margin: 0;
+}
+
+.profile-role {
+  color: var(--primary);
+  font-size: var(--font-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.profile-bio {
+  color: var(--text-light);
+  font-size: var(--font-sm);
+  line-height: 1.5;
+}

@@ -1,0 +1,173 @@
+/* =========================
+   OVERLAY
+========================= */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+
+  z-index: 1000;
+
+  animation:
+    overlay-fade 0.2s ease;
+}
+
+/* =========================
+   BACKDROP
+========================= */
+
+.overlay-backdrop {
+  position: absolute;
+  inset: 0;
+
+  background:
+    rgba(0, 0, 0, 0.55);
+
+  backdrop-filter:
+    blur(8px);
+
+  -webkit-backdrop-filter:
+    blur(8px);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.overlay-content {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* =========================
+   DRAWER
+========================= */
+
+.drawer {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 24px;
+
+  background:
+    var(--surface);
+
+  border-radius:
+    28px 28px 0 0;
+
+  box-shadow:
+    0 -12px 40px rgba(0, 0, 0, 0.18);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  animation:
+    drawer-up 0.25s ease;
+}
+
+/* Drawer Handle */
+
+.drawer::before {
+  content: "";
+
+  display: block;
+
+  width: 48px;
+  height: 5px;
+
+  margin:
+    0 auto 20px;
+
+  border-radius: 999px;
+
+  background:
+    var(--border, #ddd);
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform:
+    translate(-50%, -50%);
+
+  width:
+    min(520px, 92vw);
+
+  max-height:
+    90vh;
+
+  overflow-y:
+    auto;
+
+  padding: 24px;
+
+  background:
+    var(--surface);
+
+  border-radius:
+    28px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.2);
+
+  animation:
+    modal-pop 0.25s ease;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes overlay-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes drawer-up {
+  from {
+    transform:
+      translateY(100%);
+  }
+
+  to {
+    transform:
+      translateY(0);
+  }
+}
+
+@keyframes modal-pop {
+  from {
+    opacity: 0;
+
+    transform:
+      translate(-50%, -46%)
+      scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translate(-50%, -50%)
+      scale(1);
+  }
+}

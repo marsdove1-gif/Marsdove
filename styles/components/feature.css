@@ -1,0 +1,88 @@
+/* =========================
+   FEATURE
+========================= */
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+
+}
+
+
+/* =========================
+   FEATURE HEADER
+========================= */
+
+.feature-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--space-md);
+  
+  padding-bottom: var(--space-sm);
+  
+  border-bottom: 1px solid var(--border);
+}
+
+.feature-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.feature-title {
+  margin: 0;
+  font-size: var(--font-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.15;
+  color: var(--text);
+}
+
+.feature-subtitle {
+  font-size: var(--font-sm);
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+
+/* =========================
+   FEATURE ACTION
+========================= */
+
+.feature-action {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================
+   FEATURE CONTENT
+========================= */
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .feature-header {
+    padding-bottom: 10px;
+  }
+  
+  .feature-title {
+    font-size: var(--font-lg);
+  }
+  
+  .feature-subtitle {
+    font-size: var(--font-xs);
+  }
+}

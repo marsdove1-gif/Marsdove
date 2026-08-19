@@ -1,0 +1,12 @@
+/* Marsdove Icon primitive */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  flex: 0 0 auto;
+}
+
+.icon-sm { font-size: .875em; }
+.icon-md { font-size: 1em; }
+.icon-lg { font-size: 1.25em; }

@@ -1,0 +1,9 @@
+/* Compatibility entrypoint. The v5 public stylesheet is styles/marsdove.css. */
+@import "./reset.css";
+@import "./theme.css";
+@import "./common.css";
+@import "./typography.css";
+@import "./layout.css";
+@import "./ui.css";
+@import "./components.css";
+@import "./utilities.css";

@@ -1,0 +1,48 @@
+/* Marsdove UI primitives */
+.input,
+.textarea,
+.select-native {
+  box-sizing: border-box;
+  width: 100%;
+  font: inherit;
+  color: var(--text-color);
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.input { min-height: 48px; padding: 0 14px; }
+.textarea { min-height: 110px; padding: 12px 14px; resize: vertical; }
+.select-native { min-height: 48px; padding: 0 14px; }
+
+.container { width: min(100% - 32px, 1200px); margin-inline: auto; }
+.stack { box-sizing: border-box; }
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--background);
+}
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+.avatar-sm { width: 32px; height: 32px; }
+.avatar-md { width: 48px; height: 48px; }
+.avatar-lg { width: 72px; height: 72px; }
+
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: md-spin .7s linear infinite;
+}
+.spinner-lg { width: 28px; height: 28px; }
+
+@keyframes md-spin { to { transform: rotate(360deg); } }
+
+.icon { display:inline-flex; align-items:center; justify-content:center; line-height:1; flex:0 0 auto; }
+.icon svg { display:block; }

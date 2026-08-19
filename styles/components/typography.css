@@ -1,0 +1,166 @@
+/* =========================
+   TITLES
+========================= */
+
+.title {
+  margin: 0;
+  font-weight: var(--font-weight-bold);
+  color: var(--text);
+  line-height: var(--line-height-sm);
+  letter-spacing: -0.02em;
+}
+
+.title-1 { font-size: var(--font-2xl); }
+.title-2 { font-size: var(--font-xl); }
+.title-3 { font-size: var(--font-lg); }
+.title-4 { font-size: var(--font-md); }
+
+/* semantic */
+.page-title { 
+  font-size: var(--font-xl);
+  font-weight: 900;
+}
+.card-title { font-size: var(--font-lg); }
+.feature-title { font-size: var(--font-lg); }
+
+/* =========================
+   TEXT
+========================= */
+
+.text {
+  margin: 0;
+  font-size: var(--font-md);
+  color: var(--text);
+  line-height: var(--line-height-md);
+}
+
+.text-sm { font-size: var(--font-sm); }
+.text-xs { font-size: var(--font-xs); }
+
+.text-muted { color: var(--text-muted); }
+.text-light { color: var(--text-light); }
+.text-primary { color: var(--primary); }
+.text-danger { color: var(--danger); }
+.text-success { color: var(--success); }
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.paragraph {
+  margin: 0;
+  font-size: var(--font-md);
+  color: var(--text-light);
+  line-height: var(--line-height-lg);
+}
+
+.paragraph-sm { font-size: var(--font-sm); }
+.paragraph-muted { color: var(--text-muted); }
+
+/* =========================
+   PRICE
+========================= */
+.price {
+  margin: 0;
+  font-size: var(--font-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary);
+  line-height: 1.2;
+
+  /* money UX upgrades */
+  font-family: Inter, system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.2px;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.price-sm {
+  font-size: var(--font-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.price-lg {
+  font-size: var(--font-xl);
+}
+
+.old-price {
+  color: var(--text-light);
+  text-decoration: line-through;
+  font-weight: var(--font-weight-normal);
+}
+
+/* =========================
+   LABEL
+========================= */
+
+.label {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: var(--font-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text);
+}
+
+.label-required::after {
+  content: " *";
+  color: var(--danger);
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  padding: 4px 8px;
+  border-radius: var(--radius-pill);
+
+  font-size: var(--font-xs);
+  font-weight: var(--font-weight-bold);
+}
+
+.badge-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.badge-secondary {
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+.badge-danger {
+  background: rgba(220,38,38,.12);
+  color: var(--danger);
+}
+
+
+.profile-name {
+  margin: 0;
+  line-height: 1.2;
+  font-weight: var(--font-weight-bold);
+  color: var(--text);
+}
+.text-accent { color: var(--accent); }
+.text-warning { color: var(--warning); }
+.text-info { color: var(--info); }
+.primary-text { color: var(--text); }
+.secondary-text { color: var(--text-light); }
+.muted-text { color: var(--text-muted); }
+.accent-text { color: var(--accent); }
+.danger-text { color: var(--danger); }
+.success-text { color: var(--success); }
+.display { font-family: var(--font-heading); font-size: clamp(2.2rem, 6vw, 4.8rem); line-height: 1.02; letter-spacing: -.035em; }
+.badge-success { background: color-mix(in srgb, var(--success) 12%, var(--surface)); color: var(--success); }
+.badge-warning { background: color-mix(in srgb, var(--warning) 14%, var(--surface)); color: var(--warning); }
+.badge-info { background: color-mix(in srgb, var(--info) 12%, var(--surface)); color: var(--info); }
+.badge-accent { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); color: var(--accent); }
+.badge-neutral { background: var(--secondary); color: var(--text); }
+.badge-sm { padding: 3px 7px; font-size: var(--font-xs); }
+.badge-lg { padding: 6px 10px; font-size: var(--font-sm); }
+.badge-dot::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }

@@ -1,0 +1,2 @@
+export function debounce(fn, wait = 250) { let timer; return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), wait); }; }
+export function throttle(fn, wait = 250) { let last = 0; let timer; return (...args) => { const now = Date.now(); const remaining = wait - (now-last); if (remaining <= 0) { clearTimeout(timer); timer=null; last=now; fn(...args); } else if (!timer) timer=setTimeout(()=>{last=Date.now();timer=null;fn(...args)},remaining); }; }

@@ -1,0 +1,65 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.card-header,
+.card-body,
+.card-footer {
+  padding: var(--space-md);
+}
+
+.card-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.card-footer {
+  border-top: 1px solid var(--border);
+}
+
+
+
+
+
+/* =========================
+   DETAIL CARD
+========================= */
+
+.detail-card {
+  min-height: 100%;
+}
+
+.detail-card-title {
+  margin: 0;
+  font-size: var(--font-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--text);
+}
+
+.detail-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+
+/*Profile card*)*/
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+
+
+.fa-whatsapp{
+  color: #25D366;
+}
