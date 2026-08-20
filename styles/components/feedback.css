@@ -87,3 +87,6 @@
 .skeleton-md { border-radius: var(--radius-md); }
 .skeleton-lg { border-radius: var(--radius-lg); }
 @keyframes md-skeleton { 50% { opacity: .45; } }
+
+.async-state { width: 100%; }
+.async-state-loading { display: grid; gap: var(--space-sm); place-items: center; min-height: 120px; }
